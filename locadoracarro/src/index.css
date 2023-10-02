@@ -1,25 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
-
 :root {
   --background: #0C0A09;
   --background-card: #1C1917;
   --border-card: #27272A;
   --primary-text: #F2F2F2;
   --secondary-text: #93939B;
-  --dark-text: #1C1917;
   --primary: #22C55E;
   --secondary: #268C4A;
-  --tertiary: #26A653;
   --border: ;
   --radius: 0.5rem;
-  --background-input: #0C0A09;
 
   /* Hover */
   --background-card-hover: #262626;
 }
 
 :root {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

@@ -2,15 +2,15 @@ import SideBar from "../../components/SideBar"
 
 import "../Home/Home.css";
 
-function Vehicles() {
+function Registers() {
    return (
       <div className="container_home">
          <SideBar />
          <main>
-            <h1>Veículos</h1>
+            <h1>Clientes</h1>
          </main>
       </div>
    );
 }
 
-export default Vehicles;
+export default Registers;

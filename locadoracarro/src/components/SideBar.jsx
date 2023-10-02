@@ -34,7 +34,7 @@ function SideBar() {
         </ul>
         <ul>
           <li className={styles.option}>
-            <Link to="/cadastroCarro">
+            <Link to="/vehicles">
               <span>
                 <DirectionsCarIcon />
                 <p>Veículos</p>
@@ -44,7 +44,7 @@ function SideBar() {
         </ul>
         <ul>
           <li>
-            <Link to="/cadastroLocacao">
+            <Link to="/rents">
               <span>
                 <AttachMoneyIcon />
                 <p>Locações</p>
@@ -54,10 +54,10 @@ function SideBar() {
         </ul>
         <ul>
           <li>
-            <Link to="/cadastroCliente">
+            <Link to="/register">
               <span>
-               <PersonIcon />
-               <p>Clientes</p>
+                <PersonIcon />
+                <p>Clientes</p>
               </span>
             </Link>
           </li>

@@ -1,16 +1,19 @@
 import SideBar from "../../components/SideBar"
 
-import "./Home.css";
+import "./Rents.css";
 
-function Home() {
+function Rents() {
   return (
     <div className="container_home">
       <SideBar />
       <main>
-        <h1>Locadora</h1>
+        <h1>Locações</h1>
+        <div className="tableAnalystic">
+
+        </div>
       </main>
     </div>
   );
 }
 
-export default Home;
+export default Rents;
