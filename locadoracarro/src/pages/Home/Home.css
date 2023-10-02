@@ -22,7 +22,7 @@ body {
   background-color: var(--color-background);
   user-select: none;
   overflow-x: hidden;
-} 
+}
 
 .container_home {
   display: grid;
@@ -110,7 +110,7 @@ ul button {
 ul:hover li:hover {
   background-color: #1e1e24;
   transition: ease-in 200ms;
-}   
+}
 
 /*Centro da Tela*/
 
@@ -265,7 +265,7 @@ main table tbody td {
 .dialogActions {
   display: flex;
   justify-content: flex-end;
-  background-color: var(--color-secondary); 
+  background-color: var(--color-secondary);
   border-top: 1px solid #1e1e1e;
 }
 
