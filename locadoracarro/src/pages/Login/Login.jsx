@@ -5,7 +5,7 @@ import InputMask from "react-input-mask";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 
-import login from "../../components/login.svg";
+import login from "../../assets/login.svg";
 
 import './Login.css';
 
@@ -13,7 +13,7 @@ import './Login.css';
 function Login() {
     const label = { inputProps: { "aria-label": "Checkbox demo" } };
     return (
-        <div className="container">
+        <div className="container_login">
             <div className="form_image">
                 <img src={login} alt="imgWelcome" />
             </div>
@@ -49,7 +49,9 @@ function Login() {
                     </div>
 
                     <div className="continue_button">
-                        <button /* onClick={handleSubmit} */>Logar</button>
+                        <button /* onClick={handleSubmit} */>Logar
+                        <Link className="teste" to="/home"></Link>
+                        </button>
                     </div>
                     <br></br>
                     <div className="textfield_remember">
@@ -76,4 +78,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Login;
