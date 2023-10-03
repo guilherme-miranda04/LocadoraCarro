@@ -14,65 +14,63 @@ function SideBar() {
   /* const { userContext, setContext } = useContext(Context); */
 
   return (
-    <div className={styles.header}>
-      <div className={styles.side_nav}>
-        <div className={styles.menu}>
-          <span>
-            <MenuOutlinedIcon />
-          </span>
-          <h2>MENU</h2>
-        </div>
-        <ul>
-          <li>
-            <Link to="/home">
-              <span>
-                <HomeIcon />
-                <p>Home</p>
-              </span>
-            </Link>
-          </li>
-        </ul>
-        <ul>
-          <li className={styles.option}>
-            <Link to="/vehicles">
-              <span>
-                <DirectionsCarIcon />
-                <p>Veículos</p>
-              </span>
-            </Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link to="/rents">
-              <span>
-                <AttachMoneyIcon />
-                <p>Locações</p>
-              </span>
-            </Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link to="/register">
-              <span>
-                <PersonIcon />
-                <p>Clientes</p>
-              </span>
-            </Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link to="/">
-              <span>
-                <ExitToAppOutlinedIcon className={styles.icon} />
-                <p>Sair</p>
-              </span>
-            </Link>
-          </li>
-        </ul>
+    <div className={styles.side_nav}>
+      <div className={styles.menu}>
+        <span>
+          <MenuOutlinedIcon />
+        </span>
+        <h2>MENU</h2>
       </div>
+      <ul>
+        <li>
+          <Link to="/home">
+            <span>
+              <HomeIcon />
+              <p>Home</p>
+            </span>
+          </Link>
+        </li>
+      </ul>
+      <ul>
+        <li className={styles.option}>
+          <Link to="/vehicles">
+            <span>
+              <DirectionsCarIcon />
+              <p>Veículos</p>
+            </span>
+          </Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <Link to="/rents">
+            <span>
+              <AttachMoneyIcon />
+              <p>Locações</p>
+            </span>
+          </Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <Link to="/register">
+            <span>
+              <PersonIcon />
+              <p>Clientes</p>
+            </span>
+          </Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <Link to="/">
+            <span>
+              <ExitToAppOutlinedIcon className={styles.icon} />
+              <p>Sair</p>
+            </span>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }

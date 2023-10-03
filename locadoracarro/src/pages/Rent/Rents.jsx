@@ -1,14 +1,14 @@
 import SideBar from "../../components/SideBar"
 
-import "./Rents.css";
+import stylesRents from "./Rents.module.css";
 
 function Rents() {
   return (
-    <div className="container_home">
+    <div className={stylesRents.container_home}>
       <SideBar />
       <main>
         <h1>Locações</h1>
-        <div className="tableAnalystic">
+        <div className={stylesRents.tableAnalystic}>
 
         </div>
       </main>

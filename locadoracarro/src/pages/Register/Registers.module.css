@@ -1,37 +1,143 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
-  outline: 0;
-  appearance: none;
-  border: 0;
-  text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 14px;
-}*/
-
 body {
-  font-size: 0.88rem;
-  margin: 0;
-  line-height: inherit;
-}
-
-.container_registers {
   display: flex;
-  justify-content: center;
-  align-items: left;
-  width: 50%;
-  height: 50%;
+  height: 100vh;
+  width: 100vw;
+  font-size: 0.88rem;
+  padding: 10px;
+  background-color: var(--background);
 }
 
-a {
-  color: var(--color-dark);
+.container {
+  display: grid;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 50rem auto;
 }
 
-h1 {
+.container_card {
+  max-width: 700px;
+  width: 100%;
+  background: var(--background-card);
+  padding: 25px 30px;
+  border-radius: var(--radius);
+}
+
+.container_card .title1 {
+  font-size: 26px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container_card .title2 {
+  font-size: 26px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container_card .title1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: var(--primary);
+}
+
+.container_card .title2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: var(--primary);
+}
+
+.container_card form .clients_details {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .clients_details .input_box { 
+  display: ;
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+  flex-direction: column;
+}
+
+.clients_details .input_box label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.clients_details .input_box input, select {
+  height: 1.8rem;
+  width: 100%;
+  outline: none;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: var(--background-card);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: var(--primary);
+}
+
+/* */
+
+.container_card form .address_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .address_details .input_box {
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+}
+
+.address_details .input_box>label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.address_details .input_box input {
+  height: 2rem;
+  width: 100%;
+  outline: none;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+/* h1 {
   font-weight: 800;
   font-size: 1.8rem;
 }
@@ -55,7 +161,7 @@ h5 {
 small {
   font-size: 0.75rem;
 }
-
+ */
 main {
   margin-top: 3rem;
   width: 75vw;
