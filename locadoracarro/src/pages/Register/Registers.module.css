@@ -1,3 +1,9 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +12,7 @@
 
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   font-size: 0.88rem;
   padding: 10px;
@@ -22,120 +28,114 @@ body {
   grid-template-columns: 50rem auto;
 }
 
-.container_card {
-  max-width: 700px;
-  width: 100%;
+main>h1 {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.container_form {
+  position: relative;
+  max-width: 900px;
+  width: 70%;
+  border-radius: var(--radius);
+  padding: 30px;
+  margin: 0 15px;
   background: var(--background-card);
-  padding: 25px 30px;
-  border-radius: var(--radius);
 }
 
-.container_card .title1 {
-  font-size: 26px;
-  font-weight: 500;
+.container_form form {
   position: relative;
+  margin-top: 16px;
+  min-height: 490px;
 }
 
-.container_card .title2 {
-  font-size: 26px;
+.container_form form .title {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 6px;
   font-weight: 500;
-  position: relative;
+  margin: 16px 0;
+  color: var(--primary-text);
 }
 
-.container_card .title1::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 30px;
-  background-color: var(--primary);
-}
-
-.container_card .title2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 30px;
-  background-color: var(--primary);
-}
-
-.container_card form .clients_details {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-form .clients_details .input_box { 
-  display: ;
-  margin: 20px 0 12px 0;
-  width: calc(100% / 2 - 20px);
-  flex-direction: column;
-}
-
-.clients_details .input_box label {
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.clients_details .input_box input, select {
-  height: 1.8rem;
-  width: 100%;
-  outline: none;
-  border-radius: var(--radius);
-  border: 1px solid #ccc;
-  padding-left: 15px;
-  font-size: 14px;
-}
-
-form .button {
-  height: 45px;
-  margin: 45px 0;
-}
-
-form .button input {
-  height: 100%;
-  width: 100%;
-  outline: none;
-  color: var(--background-card);
-  border: none;
-  border-radius: var(--radius);
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  background-color: var(--primary);
-}
-
-/* */
-
-.container_card form .address_details {
+.container_form form .fields {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-form .address_details .input_box {
-  margin: 20px 0 12px 0;
-  width: calc(100% / 2 - 20px);
+form .fields .inputs_field {
+  display: flex;
+  width: calc(100% / 3 -15px);
+  flex-direction: column;
+  margin: 4px 0;
 }
 
-.address_details .input_box>label {
+.inputs_field label {
+  font-size: 12px;
   font-weight: 500;
-  margin-bottom: 5px;
+  color: var(--secondary-text);
 }
 
-.address_details .input_box input {
-  height: 2rem;
+.inputs_field input, select {
+  outline: none;
+  border: 1px solid var(--border-card);
+  background-color: var(--background-input);
+  border-radius: var(--radius);
+  box-shadow: 0px 0px 8px 6px rgba(17, 17, 17, 0.486);
+  padding: 0 15px;
+  height: 42px;
+  margin: 4px 0;
+}
+
+.inputs_field input[type="date"], select {
+  color: var(--secondary-text);
+  width: 14rem;
+}
+
+.inputs_field input[type="date"]:valid, select::after {
+  width: 14rem;
+  color: var(--primary-text);
+}
+
+.inputs_field input:hover, input:focus, select:hover, select:focus {
+  background-color: var(--background-card-hover);
+}
+
+.inputs_field input::placeholder {
+  color: var(--secondary-text);
+}
+
+.container_form form button {
+  display: block;
+  margin-left: 25;
+  align-items: end;
+  justify-content: end;
+  height: 45px;
+  max-width: 200px;
   width: 100%;
+  border: none;
   outline: none;
   border-radius: var(--radius);
-  border: 1px solid #ccc;
-  padding-left: 15px;
-  font-size: 14px;
+  color: var(--background-card);
+  font-weight: 700;
+  margin: 24px 17rem;
+  background-color: var(--primary);
+  transition: all 0.3s linear;
 }
+
+.addBtn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+form button:hover {
+  background-color: var(--secondary);
+  box-shadow: 0px 0px 8px 6px rgba(17, 17, 17, 0.486);
+}
+
 
 /* h1 {
   font-weight: 800;
@@ -162,7 +162,8 @@ small {
   font-size: 0.75rem;
 }
  */
+
 main {
-  margin-top: 3rem;
+  margin-top: 0rem;
   width: 75vw;
 }

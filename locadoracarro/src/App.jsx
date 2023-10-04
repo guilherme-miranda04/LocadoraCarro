@@ -4,8 +4,6 @@ import { ToastContainer } from "react-toastify";
 import { AppRoutes } from "./routes/index.jsx";
 
 import "react-toastify/dist/ReactToastify.css";
-import './App.css';
-import './App.css'
 
 function App() {
 

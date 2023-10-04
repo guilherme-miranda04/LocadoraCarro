@@ -66,7 +66,7 @@ function Login() {
                <div className="textfield_createcount">
                   <p>
                      Ainda não tem conta?{" "}
-                     <Link className="hiperlink" to="/register">
+                     <Link className="hiperlink" to="/home">
                         {" "}
                         Criar Conta
                      </Link>
