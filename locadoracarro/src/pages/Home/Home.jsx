@@ -1,13 +1,17 @@
-import SideBar from "../../components/SideBar"
+import SideBar from "../../components/SideBar";
 
-import "./Home.css";
+import stylesHome from "./Home.module.css";
+import HomeProgress from "./HomeProgress";
 
 function Home() {
   return (
-    <div className="container_home">
+    <div className={stylesHome.container}>
       <SideBar />
       <main>
-        <h1>Locadora</h1>
+        <h1>Cadastramento de Locação</h1>
+        <div className={stylesHome.homeProgress}>
+          <HomeProgress />
+        </div>
       </main>
     </div>
   );

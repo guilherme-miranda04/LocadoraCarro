@@ -2,10 +2,10 @@
 import { Link } from "react-router-dom";
 
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import HomeIcon from '@mui/icons-material/Home';
-import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import PersonIcon from '@mui/icons-material/Person';
+import HomeIcon from "@mui/icons-material/Home";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import PersonIcon from "@mui/icons-material/Person";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 
 import styles from "./SideBar.module.css";
@@ -22,57 +22,57 @@ function SideBar() {
         <h2>MENU</h2>
       </div>
       <ul>
-        <li>
-          <Link to="/home">
+        <Link to="/home">
+          <li>
             <span>
               <HomeIcon />
               <p>Home</p>
             </span>
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
       <ul>
-        <li className={styles.option}>
-          <Link to="/vehicles">
+        <Link to="/vehicles">
+          <li>
             <span>
               <DirectionsCarIcon />
               <p>Veículos</p>
             </span>
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
       <ul>
-        <li>
-          <Link to="/rents">
+        <Link to="/rents">
+          <li>
             <span>
               <AttachMoneyIcon />
               <p>Locações</p>
             </span>
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
       <ul>
-        <li>
-          <Link to="/register">
+        <Link to="/register">
+          <li>
             <span>
               <PersonIcon />
               <p>Clientes</p>
             </span>
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
       <ul>
-        <li>
-          <Link to="/">
+        <Link to="/">
+          <li>
             <span>
               <ExitToAppOutlinedIcon className={styles.icon} />
               <p>Sair</p>
             </span>
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
     </div>
   );
 }
 
-export default SideBar;  
+export default SideBar;
