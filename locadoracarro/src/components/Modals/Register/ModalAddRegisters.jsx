@@ -79,16 +79,23 @@ export const ModalAddRegisters = ({ closeAddRegistersModal, onSubmit }) => {
       setStreet(responseAddress?.logradouro);
       setState(responseAddress?.uf);
     } else {
-      toast.error("O CEP inserido não existe!", {
-        position: "bottom-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
+      handleChangeNeighborhood(
+        setNeighborhood(""),
+        setCity(""),
+        setStreet(""),
+        setState(""),
+
+        toast.error("O CEP inserido não existe!", {
+          position: "bottom-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        })
+      );
     }
   }
 

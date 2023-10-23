@@ -5,7 +5,10 @@ import stylesmodaledit from "./ModalEditRegisters.module.css";
 import { toast } from "react-toastify";
 import ReactInputMask from "react-input-mask";
 
-export const ModalEditRegisters = ({ closeEditRegistersModal, defaultValue }) => {
+export const ModalEditRegisters = ({
+  closeEditRegistersModal,
+  defaultValue,
+}) => {
   const [formState, setFormState] = useState(
     defaultValue || {
       numberCNH: "",
@@ -83,16 +86,23 @@ export const ModalEditRegisters = ({ closeEditRegistersModal, defaultValue }) =>
       setStreet(responseAddress?.logradouro);
       setState(responseAddress?.uf);
     } else {
-      toast.error("O CEP inserido não existe!", {
-        position: "bottom-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
+      handleChangeNeighborhood(
+        setNeighborhood(""),
+        setCity(""),
+        setStreet(""),
+        setState(""),
+
+        toast.error("O CEP inserido não existe!", {
+          position: "bottom-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        })
+      );
     }
   }
 

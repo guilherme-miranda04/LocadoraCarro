@@ -1,0 +1,33 @@
+.app {
+  width: 60vw;
+  height: 60vh;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  background-color: var(--background-card);
+}
+
+.app li {
+  width: 20vw;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+  font-size: medium;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.app button {
+  width: 10%;
+  height: 20%;
+  color: var(--primary-text);
+  background-color: var(--primary);
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.app button:hover {
+  background-color: var(--secondary);
+}

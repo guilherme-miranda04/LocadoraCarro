@@ -88,7 +88,7 @@ export const ModalAddVehicles = ({ closeAddVehiclesModal, onSubmit }) => {
                     Selecione...
                   </option>
                   <option value="AVAILABLE">Disponível</option>
-                  <option value="UNAVAILABLE">Indisponível</option>
+                  <option value="MAINTENCE">Manutenção</option>
                 </select>
               </div>
             </div>

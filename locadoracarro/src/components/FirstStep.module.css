@@ -1,0 +1,78 @@
+.appContainer{
+  justify-content: center;
+  align-items: center;
+}
+
+.textfield {
+  width: 100%;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+
+}
+
+.textfield > input,
+select {
+  display: flex;
+  width: 50%;
+  height: 42px;
+  margin-top: 4px;
+  box-shadow: 2px 2px 2px 4px rgba(17, 17, 17, 0.486);
+  border: 1px solid var(--border-card);
+  background-color: var(--background-card);
+  border-radius: var(--radius);
+  margin: 0.4rem 0rem;
+  padding: 0rem 0.2rem 0rem 1rem;
+  outline: none;
+}
+
+.textfield select:hover,
+input:hover {
+  background-color: var(--background-card-hover);
+}
+
+.textfield select:focus-visible,
+input:focus-visible {
+  outline: 1px solid var(--primary);
+  box-shadow: 2px 2px 12px rgba(31, 31, 31, 0.637);
+  background-color: var(--background-card-hover);
+}
+
+.textfield input[type="date"]:valid {
+  width: 100%;
+  color: var(--primary-text);
+}
+
+.textfield > select:invalid {
+  color: var(--secondary-text);
+}
+
+.textfield > select:valid {
+  color: var(--primary-text);
+}
+
+.textfield > input:focus select:focus {
+  color: var(--primary-text);
+  width: 100%;
+  height: 42px;
+}
+
+.textfield input::placeholder {
+  color: var(--secondary-text);
+}
+
+.button {
+  width: 10%;
+  height: 20%;
+  color: var(--primary-text);
+  background-color: var(--primary);
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+}

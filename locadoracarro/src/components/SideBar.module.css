@@ -79,7 +79,7 @@ body {
   padding: 0 15px;
 }
 
-ul {
+.side_nav ul {
   list-style: none;
   padding: 0 15px;
 }
@@ -94,27 +94,27 @@ ul {
   border-radius: 1rem;
 } */
 
-ul li p {
+.side_nav ul li p {
   white-space: nowrap;
   display: none;
 }
 
 
-ul li span {
+.side_nav ul li span {
+  color: var(--primary-text);
   display: flex;
   align-items: center;
   width: 20px;
   margin-right: 0px;
 }
 
-ul li span p {
+.side_nav ul li span p {
   height: 50px;
   min-width: 50px;
   border-radius: 12px;
-  line-height: 50px;
 }
 
-ul button {
+.side_nav ul button {
   background-color: transparent;
   color: var(--primary-text);
   color: black;
@@ -126,8 +126,9 @@ ul button {
   border-radius: 1rem;
 }
 
-ul li {
-  margin: 30px 0;
+.side_nav ul li {
+  height: 100%;
+  margin: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,7 +136,7 @@ ul li {
   border-radius: 1rem;
 }
 
-ul:hover li:hover {
+.side_nav ul:hover li:hover {
   background-color: var(--background-card-hover);
   transition: ease-in 200ms;
   align-items: center;
